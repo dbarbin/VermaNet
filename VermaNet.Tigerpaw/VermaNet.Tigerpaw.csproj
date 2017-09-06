@@ -1,0 +1,3240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7001C18B-6C0D-4FF6-B0EB-E6B7B1D7F4B0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VermaNet.Tigerpaw</RootNamespace>
+    <AssemblyName>VermaNet.Tigerpaw</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tblAcceptanceStatu.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAccount.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAccountGroup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAccountPassword.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAccountPasswordHistory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAccountProfile.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAccountRelation.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAccountSource.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAccountStatus.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAccountSystem.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAccountType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblACH_Clearance_Logging.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblActivity.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblActivityPath.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblActivityProfile.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblActivityStep.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAddOnLicenseParameter.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAdjustmentsLog.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAgreementStatus.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAgreementType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAltBillTo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAltShipTo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAPIUser.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAPIUsersAudit.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAPPODetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAPPOHeader.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblARDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblARDistribution.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblARHeader.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblARPayment.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblARPayments_Pending.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblARReceipt.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblARReceipts_Pending.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblARTax.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAssemblyDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAssignedAccountGroup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAssignedAccountProfile.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAssignedCoManagedIT_Tech_AccountGroup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAssignedContactGroup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAssignedContactProfile.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAssignedExternalAccount.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAssignedRepGroup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAssignedResolution.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAssignedSICCode.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAssignedSOProfile.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAssignedSymptom.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAudit.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAutomatedReport.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAutomatedReportEmail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAutomatedReportParameter.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAutomatedReportSchedule.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAutomatedReportsConfig.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAvalaraDocumentDetailTax.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAvalaraEntityUseCode.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAvalaraEntityUseCodeOption.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBackTrack.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBillCycleDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBillCycleTotal.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBOTaxCode.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBOTransaction.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblBounceProcessorConfig.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCalendarPrint.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCaseUnitsOfMeasure.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCentralBilling.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCentralBillingCreditMemo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCentralBillingMiscCredit.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCentralBillingWorkTable.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblChangeOrderCrossReference.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblChangeOrderCrossReferenceDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCircuit.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCircuitDialNumber.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContact.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContactGroup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContactProfile.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContract.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContractBillingDescription.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContractBillingInfo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContractCustomer.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContractDescription.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContractDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContractStatus.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContractsToInvoice.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContractTemplate.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContractTemplateDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContractType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContract_Basis.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblContract_BillingCycle.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCountry.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCreditCardType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCreditMemo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCreditMemoAssemblyDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCreditMemoDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCreditMemoSerial.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCreditMemoStatus.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCustomerAssetStatus.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCustomerInventory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCustomerInventoryAssemblyDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCustomFieldAppliesTo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCustomFieldCategory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCustomFieldConstraint.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCustomFieldDefinition.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCustomFieldValue.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCustomFoldersCategory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCustomFoldersFolder.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCustomFoldersNote.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDashBoardPanel.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDashBoardPanelCategory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDashBoardPanelLayout.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDashboardPanelsDefaultFieldDefinition.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDashBoardPanelsFilterOperator.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDashboardPanelsRepFieldDefinition.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDashboardSupportTable.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDashboardThresholdColor.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDataMiner.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDealerPortalAvailableActivity.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDealerPortalGroupAssignment.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDebitMemo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDebitMemoAssemblyDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDebitMemoDescription.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDebitMemoDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDebitMemoStatus.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDepartment.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDiscountLevel.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDiscountTierDescription.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDiscountTierDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDispatchBoard.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDocument.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDocumentSignature.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDocumentTopic.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDoNotEmailList.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDoNotFax.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDoNotFaxReason.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailAddress.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailConnector_ExcludedDomains.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailConnector_ExcludedFileExtensions.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailConnector_OmissionText.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailMessage.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailSendQueue.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailSent.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailTemplateCategory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailTemplateCategoryFavorite.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailTokenSource.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailTrack_Bounce.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailTrack_ClickThru.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailTrack_ClickThruLinks.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailTrack_Config.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailTrack_Open.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailTrack_Stats.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmailTrack_UnSubscribe.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEmployeeNumberRanx.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblExchange.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblExpens.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblExpensePaymentType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblExpenseType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblExpertise.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblExplorerBarCategory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblExplorerBarItem.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblExplorerBarView.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblExplorerBarViewDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblExplorerRepFavorite.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblExternalProduct.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEZBillWorkTable.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblFiFoLiFo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblFilterAdv.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblFilterField.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblFreightTerm.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblFTCAudit.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblGLAccount.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblGLAccountType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblGLCode.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblGLDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblGLHeader.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblGridColumn.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblGridDefinition.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblGridSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblGridSettings2.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblGridSettingsDefault.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblGroupTransaction.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblImport.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblImportExclusion.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblImportField.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblImportLinkField.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblImportProcedure.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblImportRequirement.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblImportRequirementSubstitute.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblImportTable.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblImportType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblInstallLocation.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblInvoice.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblInvoiceAssemblyDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblInvoiceChangeAudit.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblInvoiceDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblInvoiceLock.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblInvoicePostingAudit.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblInvoiceSourceCrossReference.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblInvoiceStatus.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblInvoicesToEmail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblInvoiceTerm.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblItemCategory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblItemMovement.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblItemStatus.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblItemSubCategory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblJournal.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblJournalAction.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblJournalTopic.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblKaseyaConfig.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblKBBook.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblKBChapter.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLaborRateCategory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLastActionInfo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLeaseBuyout.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLink.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLinkField.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLinkFileDescription.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLinkInstruction.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLinkRule.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLinkRuleMaster.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLinkTable.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLiteraturePackage.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLiteraturePackageFile.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLocalAreaCode.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLocation.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLocationMinMax.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLocationType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLocator.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLogActivity.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLogDef.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLogEmailGroup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLogExportEmail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLogExportGroup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLogIClean.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLogInventoryCount.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLogMultipleServiceOrderInvoiceException.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLogReason.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLogWorkflow.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLPIConfig.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLVAppearenceCondition.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLVConditionalAction.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLVDefinition.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLVFieldDefinition2.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLVRepSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblLVSupportTable.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMailingLabel.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMailingLabelDefinition.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblManagedServiceAlertQueue.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblManufacturer.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMapLink.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMercuryInvoiceCrossReference.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMergeAccountDup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMergeAccountsDefinition.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMeterTransaction.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMobileDispatchWorkStatusType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMobileRep.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMobileRequest.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMSPAccountAsset.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMSPAgreement.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMSPAgreementAssetType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMSPAgreementNonAsset.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMSPAgreementsBillingPeriod.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMSPAssetType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMSPAssetTypeList.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMSPAssetTypeXRef.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMSPBillingDetailWorkTable.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMSPBillingInvoiceComparison.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMSPBillingWorkTable.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMSPDateToBillWorkTable.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMSPPollingQueue.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblMSPSOStatusXRef.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblNableConfig.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblNamePrefix.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblNetworkCarSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblNextActionType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblNonStockConversionDefault.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblNonStockItemWorkTable.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOppHowDidYouHearAboutU.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOpportunity.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOpportunityCloseReason.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOpportunityName.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOpportunityStage.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOpportunityStageChangeLog.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOpportunityStatus.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOpportunityType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOrderDetailComment.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOutlookAddInConfig.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOutlookAddInExclusion.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOutlookGlobalConfig.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOutlookGlobalExclusion.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOutlookSyncDefinition.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPalmBlackList.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPalmLicenseKey.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPalmSync.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPasswordCategory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPasswordImportLog.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPaymentLog.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPaymentMethod.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPaymentService.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPayMethod.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPhoneLocation.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPhoneNumber.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPhysicalInventory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPhysicalInventorySerialNumber.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPOAssemblyDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPOAssemblySerial.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPODescription.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPODetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPODetail_Export.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPOPostingJournal.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPOReceipt.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPOReceiptsWorkTable.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPOReceipts_Export.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalAdRotator.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalControl.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalControlState.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalControlState_Employee.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalGridSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalLeadFormSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalLeadQueue.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalModule.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalModules_Employee.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalNew.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalOption.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalPaymentOption.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalPermission.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalReport.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalRight.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalRole.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPortalTaskPriority.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPOSerialNumber.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPOToOrderCrossReference.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPOToOrderCrossReferenceReceipt.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPOWizardWorkTable.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPriceBook.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPriceBookLabel.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPriceBookLabelDefintion.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPriceBookVendorAssignment.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPriceLevel.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPriceLevelCategory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPriceLevelGLCodeOverride.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPriceLevelOverride.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPriorities2.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPriority.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProcessedDeposit.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProfessionalServicesBillingWizardWorkTable.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProject.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProjectNote.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProjectNoteTopic.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProjectPhas.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProjectPhaseAssignment.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProjectPhaseCheckList.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProjectPhaseCheckListTemplate.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProjectPhaseCheckListTemplateDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProjectPhaseStatus.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProjectPhaseTemplate.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProjectPhaseTemplatesPhaseAssignment.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProjectPriority.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProjectStatus.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProjectTechsAssigned.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblProviderTaxType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPurchaseOrder.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPurchaseOrderStatus.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuickSale.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuickSaleAssemblyDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuickSaleDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuote.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuoteAssemblyDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuoteDescription.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuoteDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuoteDiscountAdjuster.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuoteImport.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuoteJob.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuoteLock.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuoteNote.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuoteNoteTopic.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuoteSource.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuoteStatus.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuoteTemplate.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuoteToSOCrossReference.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuoteToSODetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblQuoteType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRate_Basis.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblReadyToInvoice.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRealTimePriceBookVendor.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRealTimePriceBookVendorConfig.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRecurringOrderTemplate.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRep.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRepExpertise.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRepGroup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblReport.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblReportCategory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblReportGroupByPhysicalInventory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblReportsAssignedCategory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblReportsRepFavorite.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblReportSubCategory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRepOutlookSyncSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRepsApiUserInfo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRepsInfo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRepSOPrintSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRepSORelationsDefault.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRepStatus.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblResolution.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblResource.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblResponsibility.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRMA.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRMABin.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRMADetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRMAReceipt.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRMASerialNumber.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSalesTaxDollar.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblScanningParameter.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblScheduledActivity.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblScheduledPath.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSearchCategory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSearchTemplate.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSearchViewLookup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSecurityCategory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSecurityGroup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSecurityGroupAssignedPrivilege.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSecurityPrivilege.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSecurityRoleReportAssignment.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSerialLog.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSerialNumber.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblServiceOrder.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblServiceOrderChangeQueue.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblServiceOrderChangeQueueProcessed.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblServiceOrderRelation.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblServiceZone.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSeverity.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblShipper.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblShippingMethod.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSICCode.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSLASeverity.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOActionPlanDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOAssignedSubcontractor.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOCategory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOChangeLog.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSODescription.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOFeedback.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOItemsServiced.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOLinkOption.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOLock.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOLog.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOLogInvoiceBasi.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOLogsBilled.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSONote.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSONoteTopic.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOPackSlipWorkTable.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOPartsUsed.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOPartsUsedAssemblyDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOProfile.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSORequestFromEmail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSoSeverity.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOStatus.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOTechsAssigned.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOTemplate.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOTemplateActionPlanDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOTemplateLog.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOTemplatePart.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOTemplatePartsAssemblyDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOWebLink.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSOWebLinkTemplate.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblState.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblStatusLabelAction.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSubcontractorExpertise.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSubcontractorInformation.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSubcontractorServiceZone.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSubContractorSystem.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSymptom.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSyncSNLI.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysAccountingSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysAddonStatu.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysAddOnVersion.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysAPIConfig.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysCoManageOption.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysCompanySetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysComputerSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysDatabaseVersion.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblsysDatabaseVersionHistory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysDictionaryTemplate.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysDisclaimerSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysDocManagement.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysDocumentType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSYSEmailConnectorSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysEmailOption.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysEnumeration.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSYSExchangeContact_Deletes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysExchangeRepSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysExchangeSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSYSExchangeTask_Deletes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysExclusiveProcess.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysGUID.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysListViewAction.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysListViewPrint.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysMapPointOption.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblsysMobileDefault.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSYSMSPEmailProcessorSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysNextNumber.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysOpportunity.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblsysPayMethodSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysPBSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysQuickSaleSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysQuoteOption.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysReportSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysScreenPrint.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysSecureDB.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblsysSecureSQL.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSYSSerialization.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSYSSerializationbyRep.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysSerialNumber.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysServiceStatu.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysSOSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSystem.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSystemType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSysTigerpaw.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTally.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTask.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTaskAction.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTaskActionPlan.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTaskActionPlanDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTaskLibrary.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTaskPriority.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTasks_RecurringData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTaskType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTaxCode.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTaxDistrict.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTaxWatch.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTemplateImportHeader.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTemplateImportLog.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTemplateImportPart.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTemplateImportPartsAssembly.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTemplateImportTask.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTigerpawClientNew.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTigerpawVersion.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTimeSlip.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTimeTransactionsPrint.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTitle.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTransfer.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTransferDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTransferSerialNumber.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbltsiTimersConfig.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblUnitsOfMeasure.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblUsedLicenseCode.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblUserConnection.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblValAppearanceQueryColumn.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblVehicle.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblVendorInformation.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewColumnCategory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewColumnProperty.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewColumn_ColumnProperties.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewDefinition.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewDefinitionAdvancedFilter.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewDefinitionRepSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewFormatType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewKeyType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewLayout.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewLayoutAdvancedFilterItem.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewLayoutColumn.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewLayoutColumnFilter.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewLayoutRepShare.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewRepLayoutSetting.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewSourceTable.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewSourceTableColumn.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewSourceTableColumns_Save.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblViewTableType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblView_SourceTables.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblVoidedWorkOrder.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblVoidedWorkOrderDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkFlowDepartment.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkflowEventAssignedDocumentType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkFlowEventConditionDataSource.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkFlowEventConditionDocumentTypeDataSource.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkFlowEventConditionField.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkflowEventConditionSelectedField.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkFlowEventDefinition.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkFlowEventDocumentType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkFlowEventLog.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkFlowEventLogRecipient.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkFlowEventNotificationPriority.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkFlowEventRecipientGroup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkFlowEventStaticRecipient.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkFlowEventType.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkFlowQueue.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkFlowRepNotification.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkflowTimedEventLog.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkOrderStatus.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblWorkPerformedLibrary.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblZenithConfig.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblZenithStatu.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblZenithStatusXref.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tfr_TimeSheets_GetTotalLineForDay_Result.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tf_ConvertCSVToTable_Integer_Result.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tf_ConvertCSVToTable_Result.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tf_GetUtilizedHoursForTasksForAllRepsForDayActiveOnly_Result.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tf_GetUtilizedHoursForTasksForAllRepsForDay_Result.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tf_GetUtilizedHoursForTasksForRepForDay_Result.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tf_GetUtilizedHoursForTasksForRepGroupForDayActiveOnly_Result.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tf_GetUtilizedHoursForTasksForRepGroupForDay_Result.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tf_MspAgreementsAddsAndRemoves_Result.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tf_udfDateTimes_Result.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TigerpawDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TigerpawDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TigerpawDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TigerpawDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TigerpawDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_AccountLabels.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_AccountProfitByRep.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_AccountProfitByRepCredits.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_AccountProfitByRepDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_AccountProfitByRepMaster.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_AccountsOnCreditHold.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_AccountsWithExpiringCreditCard.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_AccountsWithNoBillTo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_AccountsWithoutSICCodes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_AccountTaxCode.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_AddressTest.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ARInfo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ARReceipts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_AssignedResolutionsForServiceOrders.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_AssignedSymptomsForServiceOrders.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_AssociationFee.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_BillableVsNonBillableTime.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ChangeLogs.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ConsolidatedInvoiceIDCount.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ContactLabels.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ContractInvoiceBillingDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ContractInvoices.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ContractSOHistory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ContractUsageHistory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ContractUsageInvoice.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_CountOfOpenOpportunitiesByStageReps.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_CreatePricebookLabels.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_CreditMemo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_CreditMemoBillTo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_CreditMemoShipTo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_CreditMemoUsingEstimatedCost.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_CreditMemo_cbi.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_CreditMemo_cbi2.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_CreditMemo_cbi2_all.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_CreditMemo_cbi_no_detail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_CreditSummary.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_CustomCategories.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_CustomContractInvoices.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_CustomerInventorybyItemID.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_CustomInvoiceBillToSub.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_CustomQuote.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_CustomServiceOrderHeaderSub.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_DebitMemoBillTo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_DebitMemoShipTo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ExternalInvoiceCrossRef.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_FIFOLIFO.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_GetWorkOrders.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InventoryQuantities.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InventoryValuation.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceAccountAddressSub.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceBillToSub.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceCentralBillingInformation.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceCommission.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceCommissionUsingEstimatedCost.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceHeader.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceHeaderItemID2.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceHeaderSub.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceItemID.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceItemID2.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceListView.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceListView_cbi.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoicePackingSlip.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceRevenueSummary.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_Invoices.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceSales.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceSalesKeep.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceShipToSub.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceSummary.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoicesWithOutPayments.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_InvoiceWCreditMemoRegister.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_invoice_cbi2.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_invoice_cbi3.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_invoice_cbi_value_initial_sale.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ItemMovement.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ItemsNotReceivedOnPO.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ItemSoldToWhom.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_JobCostFromInvoices.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_JobCostFromQuotes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_JobCostFromServiceOrders.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LastInvoiceForAnAccount.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LastInvoiceForAnAccount_cbi.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LastPurchasedItemID.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LastSaleToAccount.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LastSaleToAccount_cbi.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LastServiceOrderPerAccount.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LastSONoteForServiceOrder.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LogActivities.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LogEmailGroup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LogExportEmail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LogExportGroup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LogIClean.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LogInventoryCounts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LogMultipleServiceOrderInvoiceExceptions.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LogoHeader.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LogWorkflow.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LVAccountPayments.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LVAccountPaymentsForInvoices.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_LVCreditMemos.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_MSPAgreementList.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_MSPInvoiceComparsionHeader.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_MSPInvoiceProfitablity.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_MSPProfiabilityDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_MSPProfiabilityHeader.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_MSPServiceOrderProfitablity.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_NewAccountSource.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_NonStockItems.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_OpportunitiesForcastByRep.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_OpportunitiesFunnelOpenByStages.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_OpportunityStageChange.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_OpportunityStageChangeLogLatestLog.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_OutOfBusinessHoursTimeTransactions.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_PaymentsReceivedForConsolidatedInvoices.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_PickTicket.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_PONumberCrossReferenceToSourceDocument.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_POProjectedvsReceivedCost.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_PortalGetWorkOrders.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_POShipTo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_PriceBook.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_PriceBookAssemblyDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_PriceBookItemList.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_PriceBookListView.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_PriceBookPurchasing.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_PriceBookView.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ProductSalesOverview.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ProjectChangeControl.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ProjectChangeControl_Quote.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ProjectChangeControl_ServiceOrder.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ProjectNotes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ProjectPhasesWithTask.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ProjectSummaryForProjectLeader.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ProviderTax.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_PurchaseOrder.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_PurchaseOrdersByProject.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_PurchaseOrdersByPurchaseOrder.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_PurchaseOrdersbyQuoteNumber.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_PurchaseOrdersbySONumber.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_QuoteBillTo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_QuoteLineItemTotals.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_Quotes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_QuoteShipTo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_QuoteSOInvoiceCM.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ReceiptsDetailbyPurchaseOrder.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ReceiptsDetailSerialNumbers.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_RecurringOrderSchedules.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ReorderItems.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ReportExplorer.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ResponseTimeByTech.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_RevenueSummary.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_RMAs.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SalesEstimateToActual.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SalesHistoryForAccounts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SalesHistoryForAccounts_cbi.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SalesTaxByTaxCodeAndTaxDistrict.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SalesTaxCodeDistrict.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SalesTaxDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SalesTaxReportforTaxesPaid.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SalesTaxReportforTaxesPaidSummary.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_Security.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SecurityInfoPerRep.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SecurityInfoPerSecurityRoleAndRep.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ServiceOrderHeaderSub.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ServiceOrderItemServiced.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ServiceOrdersForReports.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ServiceOrderShipToSub.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_ShortPriceBookbyItemID.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SLAStatus.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SOContracts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SOExpenses.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SOItemIDCount.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SOLogsDistinctRepAssignedAGroup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SOLogsDistinctRepNotAssignedAGroup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SOParentChild.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SOPartsUsed.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SOPickTicket.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SOsForTechAssignedAndAssociatedTechs.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SOsNotCompletelyInvoiced.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SOSubcontractorHeaderSub.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_Subcontractors.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_SymptomsandResolutions.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_TasksWithSONoTimeLogs.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_TaskwTimeLogsforAllReps.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_TaxCodeContractsvsAccounts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_TaxInfo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_TechUtilization.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_TigerpawSales.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_TimeLogExpensesByServiceOrder.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_TimeLogsByServiceOrder.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_TimeTransactions.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_TopNPerformingAccounts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_TotalAmountDuePerAccount.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_TotalAmountDuePerAccount2.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_UnfilledWOorSO.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_UniqueOpportunityLogs.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_Vendor.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_VendorShipTo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_WIPInvoiceTotals.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_WIPProjectPhases.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_WIPProjectPhaseTotals.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_WIPProjectTotals.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvwr_WIPServiceOrderFinancial.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_AccountAssetsForWorkflow.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_AccountContactsAndNotesList.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_AccountGroupsWithMemberCounts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_AccountInfo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_AccountLabels.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_AccountLabelsAGroup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_AccountList.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_AccountPrimaryEmailAddress.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_AccountsForExportWNoARCustNo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_AccountsForPastDueInvoicesWorkflow.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_AccountsWNoUncompletedTask.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_AccountsWOOpportunities.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Account_SOCount30Days.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Activities.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_APPurchaseOrders.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_ARPayments.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_AssignedAccountSICCodes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CanPricebookItemBeDeleted.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_cf_Accounts_Web_Access.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_cf_Migrated_Account_Fields.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_cf_Migrated_Contact_Fields.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_cf_Weblink_Customer_Login.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CMIT_SOList.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_ConsolidatedInvoiceTotals.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_ContactListView.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_ContactsInfo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_ContractListView.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Contracts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CountOfOpenOpportunitiesByStage.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CreditMemo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomAccountFieldData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomContactFieldData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomContractFieldData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomCreditMemoFieldData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomCustomerInventoryFieldData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomDebitMemoFieldData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomerPayment.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomFields.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomGlobalFieldData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomInvoiceFieldData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomOpportunityFieldData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomPriceBookItemFieldData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomProjectFieldData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomPurchaseOrderFieldData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomQuoteFieldData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomRepsFieldData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomSOFieldData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomTaskFieldData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_CustomWorkOrderFieldData.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_DashboardOpportunityTypes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_DashboardSOResolutionsByDate.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_DashboardSOSymptomsByDate.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_DBLVWorkItems.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_DiscountLevelPerPriceBookItem.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_DispatchBoardOrders.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_DispatchBoardOrdersWithNoTasks.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_EmailAnalyticsActivities.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_ExchangeContact_Select.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_ExchangeListView.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_ExplorerBar.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_ExplorerBarFavorites.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_FTCAudit.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_GetDefaultPriceLevelInformationForImport.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_GetOrderTotalsForProject.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_GetVendorNames.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_GetWorkOrdersForWorkOrderListView.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_HPCondensedCalendar_Select.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_HPLVAccounts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_HPLVInvoices.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_HPLVOpportunities.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_HPLVProjects.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_HPLVQuotes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_HPLVServiceOrders.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_HPLVTasks.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_HPLVWorkOrders.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_InvoiceCommission.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_InvoiceDataForGrids.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_InvoiceListView.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_InvoiceRegister.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Invoices.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_InvoicesSales.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_ItemMovement.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_ItemsInLocationForTransfer.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_JournalNotes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_JournalNotesScoreboard.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LPIConfig.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVAccounts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVARPayments.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVContacts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVContracts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVCreditMemos.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVCustomerInventory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVDebitMemos.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVExchange.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVExpenseTransactions.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVInvoices.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVJournal.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVOpportunities.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVPriceBook.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVProjects.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVPurchaseOrders.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVQuotes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVReceivedItems.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVRecurringAgreements.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVReservedItems.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVRMAs_Filter.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVRMAs_Filter2.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVRMAs_NoFilter.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVScheduledActivities.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVServiceOrders.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVServiceOrders2.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVSymptomsandResolutions.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVTasks.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVTasks_cboResource.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVTimeTransactions.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVTransfers.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVWorkFlows.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LVWorkOrders.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LV_Activities.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LV_Portal_Invoices.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LV_Portal_Quotes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LV_Portal_RMAs.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_LV_Portal_ServiceOrders.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_MaterialManagementItemsToOrder.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Mobile_ServiceOrders_EmployeeByRep.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Mobile_TimeLogTimeSlips.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_MSPAccountAssets.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_MSPAccounts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_MSPAgreementList.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_MSPAssetTypeXRef.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_MSP_Billing.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_OpportunityListview.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_OpportunityResults.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_OrdersToBeInvoicedByRepDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_OrdersToBeInvoicedByRepDetail2.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_OrdersToBeInvoicedByRepTotals.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_PhysicalInventory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_PortalMSPAgreements.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Accounts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Accounts_ByGroup.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Accounts_ByProfile.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Assets.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Circuits.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Contacts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Contracts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Contracts_Employee.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_CreditMemos.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_CustomFields.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_CustomFolders.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_DupeUsers.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Expenses.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_FillSOLog.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_GetCMITAccount.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Invoices.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Invoices_Employee.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Journal_Employee.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_LogReasons.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_MSPAgreements.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_MSPAssets.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Opportunities_Employee.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_PersonalContacts_Employee.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_PriceBookDetails_Employee.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_PriceBook_Employee.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_PriceBook_Employee_Search.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Projects.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_QuoteAssemblyDetails_Employee.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Quotes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_QuotesDetails_Employee.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Quotes_Employee.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Registrations.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_RMAs.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_ServiceOrders.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_ServiceOrdersDetails.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_ServiceOrders_Employee.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_ServiceOrders_EmployeeByRep.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_ServiceOrder_PartsDetail.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_SOAssemblyDetail_Employee.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_SOItemsServiced.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_SOLogs.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Tasks_Employee.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_TimeLogTimeSlips.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_Timeslips.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_UsersSearch.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Portal_WorkFlow_Employee.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_PriceBook.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_PriceLevels.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_ProjectListview.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Projects.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_PurchaseOrderListView.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_PurchaseOrderListView_Select.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_QuoteNotes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Quotes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_RepInfo.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Reps.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_ReservedItems.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_RMAs.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_SalesbyManufacturer.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Serial.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_SerialLog.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_ServiceOrderHeaderSub.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_SICCodes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_SOListView.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_SOLogs.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_SONotes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_SOPartsUsedForReports.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_SOResolutions.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_SOSymptoms.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_SOTimeLogsAmountForReports.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_SOTimeLogsForReports.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_StatementofAccountwithAgingTotals.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TaskListview.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_Tasks.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TasksActions.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TaskwTimeLogs.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TaxableAndGSTaxableCreditMemoAssemblyDetailTotals.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TaxableAndGSTaxableInvoiceAssemblyDetailTotals.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TimeSheets.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TimeTransactions.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_Accounts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_Accounts_CustomFields.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_Activities.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_Campaigns.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_ClickThruLinks.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_Contacts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_Contracts.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_CreditMemos.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_CustomerInventory.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_DateTime.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_DebitMemos.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_DeclinedPaymentReasons.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_EmailAnalytics.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_Invoices.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_Opportunities.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_PaymentMethods.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_PriceBookItems.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_Projects.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_PurchaseOrders.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_Quotes.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_Reps.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_ServiceOrders.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_Tasks.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_tblEmailTrack_Stats.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TokenData_TimeEntry.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_TotalQuantityForQuoteAssemblyItems.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_UniqueJournalEntriesByDate.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_UnpaidInvoiceAging.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tvw_VendorAccountName.cs">
+      <DependentUpon>TigerpawDataModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <EntityDeploy Include="TigerpawDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TigerpawDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="TigerpawDataModel.edmx.diagram">
+      <DependentUpon>TigerpawDataModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TigerpawDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TigerpawDataModel.edmx</DependentUpon>
+      <LastGenOutput>TigerpawDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="TigerpawDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TigerpawDataModel.edmx</DependentUpon>
+      <LastGenOutput>TigerpawDataModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

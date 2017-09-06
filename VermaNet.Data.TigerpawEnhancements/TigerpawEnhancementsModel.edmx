@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="TigerpawEnhancementsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="GetAwesomeBoardData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="selectedDate" Type="datetime2" Mode="In" />
+          <Parameter Name="workDaysInMonth" Type="decimal" Mode="In" />
+          <Parameter Name="workDaysInQuarter" Type="decimal" Mode="In" />
+        </Function>
+        <EntityContainer Name="TigerpawEnhancementsModelStoreContainer" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TigerpawEnhancementsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="TigerpawEnhancementsEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="GetAwesomeBoardData" ReturnType="Collection(TigerpawEnhancementsModel.GetAwesomeBoardData_Result)">
+            <Parameter Name="selectedDate" Mode="In" Type="DateTime" />
+            <Parameter Name="workDaysInMonth" Mode="In" Type="Decimal" />
+            <Parameter Name="workDaysInQuarter" Mode="In" Type="Decimal" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="GetAwesomeBoardData_Result">
+          <Property Type="Int32" Name="Engineer" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="77" />
+          <Property Type="Decimal" Name="DayBillableHours" Nullable="true" Precision="38" Scale="6" />
+          <Property Type="Decimal" Name="MonthBillableHours" Nullable="true" Precision="38" Scale="6" />
+          <Property Type="Decimal" Name="MonthlyAverage" Nullable="true" Precision="38" Scale="6" />
+          <Property Type="Decimal" Name="QuarterBillableHours" Nullable="true" Precision="38" Scale="6" />
+          <Property Type="Decimal" Name="QuarterlyAverage" Nullable="true" Precision="38" Scale="6" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TigerpawEnhancementsModelStoreContainer" CdmEntityContainer="TigerpawEnhancementsEntities" >
+          <FunctionImportMapping FunctionImportName="GetAwesomeBoardData" FunctionName="TigerpawEnhancementsModel.Store.GetAwesomeBoardData">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TigerpawEnhancementsModel.GetAwesomeBoardData_Result">
+                <ScalarProperty Name="Engineer" ColumnName="Engineer" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="DayBillableHours" ColumnName="DayBillableHours" />
+                <ScalarProperty Name="MonthBillableHours" ColumnName="MonthBillableHours" />
+                <ScalarProperty Name="MonthlyAverage" ColumnName="MonthlyAverage" />
+                <ScalarProperty Name="QuarterBillableHours" ColumnName="QuarterBillableHours" />
+                <ScalarProperty Name="QuarterlyAverage" ColumnName="QuarterlyAverage" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

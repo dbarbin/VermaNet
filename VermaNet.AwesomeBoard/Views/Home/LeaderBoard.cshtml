@@ -1,0 +1,49 @@
+﻿@model IEnumerable<VermaNet.Data.TigerpawEnhancements.GetAwesomeBoardData_Result>
+@{
+    ViewBag.Title = "Verma Systems Billing Leader Board";
+}
+
+@*<img src="~/Media/Images/AwesomeLogo.jpg" style="margin-left: auto; margin-right: auto;"/>*@
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Day Hours</th>
+        <th>Month Hours</th>
+        <th>Month Avg. per Day</th>
+        <th>Quarter Hours</th>
+        <th>Quarter Avg. per Day</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DayBillableHours)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MonthBillableHours)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MonthlyAverage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuarterBillableHours)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuarterlyAverage)
+        </td>
+    </tr>
+}
+
+</table>
+
+<script type="text/javascript">
+    // Set to reload every 30 minutes
+    window.onload = function ()
+    {
+        setTimeout(() => location.reload(true), 1800000);
+    }
+</script>
